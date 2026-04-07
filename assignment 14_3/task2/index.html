@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Bistro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Sunny Bistro</a>
+      <nav class="main-nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuToggle" aria-label="open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <h1>Welcome to Sunny Bistro</h1>
+        <p>Fresh local ingredients, handcrafted dishes, and warm hospitality.</p>
+        <a class="btn" href="#menu">Explore Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="cards-grid">
+          <article class="menu-card">
+            <h3>Bruschetta</h3>
+            <p>Toasted baguette with tomato, basil, garlic, and olive oil.</p>
+            <span class="price">$8.99</span>
+          </article>
+          <article class="menu-card">
+            <h3>Seared Salmon</h3>
+            <p>Pan-seared salmon, lemon herb butter, seasonal vegetables.</p>
+            <span class="price">$17.50</span>
+          </article>
+          <article class="menu-card">
+            <h3>Chocolate Lava</h3>
+            <p>Warm chocolate cake, vanilla cream, berry coulis.</p>
+            <span class="price">$6.75</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="slider" id="slider">
+          <div class="slides">
+            <img src="https://source.unsplash.com/collection/restaurant/1000x700?sig=1" alt="Dish 1" />
+            <img src="https://source.unsplash.com/collection/restaurant/1000x700?sig=2" alt="Dish 2" />
+            <img src="https://source.unsplash.com/collection/restaurant/1000x700?sig=3" alt="Dish 3" />
+          </div>
+          <button class="slide-btn prev" id="prev">←</button>
+          <button class="slide-btn next" id="next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Book a table or order takeout today.</p>
+        <p>Email: hello@sunnybistro.com | Phone: (555) 101-2020</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2026 Sunny Bistro</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

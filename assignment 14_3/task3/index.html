@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SR University Tech Fest Registration</title>
+  <link rel="stylesheet" href="event-form.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1>Tech Fest Registration</h1>
+      <p>Join SR University’s technical fest. Fill in your details below.</p>
+      <form id="regForm" novalidate>
+        <label>
+          Name <span aria-hidden="true">*</span>
+          <input type="text" id="name" name="name" required />
+          <small class="error" id="nameError"></small>
+        </label>
+
+        <label>
+          Email <span aria-hidden="true">*</span>
+          <input type="email" id="email" name="email" required />
+          <small class="error" id="emailError"></small>
+        </label>
+
+        <label>
+          Phone Number <span aria-hidden="true">*</span>
+          <input type="tel" id="phone" name="phone" inputmode="numeric" pattern="[0-9]*" required />
+          <small class="error" id="phoneError"></small>
+        </label>
+
+        <label>
+          Department <span aria-hidden="true">*</span>
+          <select id="department" name="department" required>
+            <option value="">-- Select department --</option>
+            <option>Computer Science</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>Information Technology</option>
+          </select>
+          <small class="error" id="deptError"></small>
+        </label>
+
+        <label>
+          Event Selection <span aria-hidden="true">*</span>
+          <select id="event" name="event" required>
+            <option value="">-- Choose event --</option>
+            <option>Code Championship</option>
+            <option>Robotics Challenge</option>
+            <option>UI/UX Hackathon</option>
+            <option>AI Talk</option>
+            <option>Startup Pitch</option>
+          </select>
+          <small class="error" id="eventError"></small>
+        </label>
+
+        <button type="submit">Register</button>
+        <p id="successMessage" class="success" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="event-form.js"></script>
+</body>
+</html>

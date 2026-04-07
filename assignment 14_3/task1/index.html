@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">MyPortfolio</a>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container">
+        <h1>Welcome to my world</h1>
+        <p>Creative developer, UI thinker, problem solver.</p>
+        <a class="cta" href="#projects">See Projects</a>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div>
+          <h2>About Me</h2>
+          <p>I design modern, accessible, responsive web experiences with clean semantic HTML and CSS.</p>
+        </div>
+        <div>
+          <ul>
+            <li>Frontend Development</li>
+            <li>UX Design</li>
+            <li>Performance Optimization</li>
+            <li>Agile Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>Modern SPA with API integration and offline mode.</p>
+            <a href="#">View case</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>Responsive e-commerce UI with dynamic filtering.</p>
+            <a href="#">View case</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>Data dashboard using charts, grid and real-time updates.</p>
+            <a href="#">View case</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Let’s collaborate on your next digital product.</p>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea rows="5" placeholder="Tell me about your project"></textarea>
+          </label>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Your Name. Built with semantic HTML & responsive CSS.</p>
+    </div>
+  </footer>
+</body>
+</html>

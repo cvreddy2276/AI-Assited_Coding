@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI E-Commerce Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <h1>ShopEase</h1>
+      <div class="cart" aria-live="polite">
+        <span class="cart-icon">🛒</span>
+        <span id="cartCount" class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Featured Products</h2>
+      <p>Browse our curated catalog and add items to your cart.</p>
+    </section>
+
+    <section id="productGrid" class="product-grid"></section>
+
+    <section id="toast" class="toast" aria-live="assertive" aria-atomic="true"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

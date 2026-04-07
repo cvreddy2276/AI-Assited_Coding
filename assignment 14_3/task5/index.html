@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">BrandName</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Clean Responsive Web Layout</h1>
+        <p>Adapted for desktop, tablet, and mobile. Modern simple style for fast prototyping.</p>
+        <a class="btn" href="#about">Learn More</a>
+      </div>
+    </section>
+
+    <section id="about" class="container content-grid">
+      <article class="content-card">
+        <h2>About</h2>
+        <p>This is a starter template for responsive website design with header, main content, and footer.</p>
+      </article>
+      <article class="content-card">
+        <h2>Features</h2>
+        <ul>
+          <li>Responsive grid layout</li>
+          <li>Mobile-first navigation</li>
+          <li>Adaptive typography</li>
+        </ul>
+      </article>
+      <article class="content-card">
+        <h2>Placeholder image</h2>
+        <img src="https://via.placeholder.com/600x340?text=Responsive+Image" alt="Placeholder image" />
+      </article>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Our Services</h2>
+      <p>Use this section to describe product offerings, features, or other important details.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 SR University Net Labs. All rights reserved.</p>
+      <p>Contact: info@example.com</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mainNav = document.querySelector('.main-nav');
+    menuBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
